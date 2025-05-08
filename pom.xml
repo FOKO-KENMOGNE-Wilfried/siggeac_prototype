@@ -64,14 +64,14 @@
                         <configuration>
                             <jdbc>
                                 <driver>org.postgresql.Driver</driver>
-                                <url>jdbc:postgresql://localhost:5432/test_db</url>
+                                <url>jdbc:postgresql://localhost:5432/tp_luc</url>
                                 <user>postgres</user>
-                                <password>Secret</password>
+                                <password>123</password>
                             </jdbc>
                             <generator>
                                 <database>
                                     <name>org.jooq.meta.postgres.PostgresDatabase</name>
-                                    <inputSchema>Schema</inputSchema>
+                                    <inputSchema>MDD</inputSchema>
                                 </database>
                                 <target>
                                     <packageName>siggeac.jooq.generated</packageName>
