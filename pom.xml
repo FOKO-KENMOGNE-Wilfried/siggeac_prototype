@@ -66,12 +66,12 @@
                                 <driver>org.postgresql.Driver</driver>
                                 <url>jdbc:postgresql://localhost:5432/test_db</url>
                                 <user>postgres</user>
-                                <password>Jin800##</password>
+                                <password>Secret</password>
                             </jdbc>
                             <generator>
                                 <database>
                                     <name>org.jooq.meta.postgres.PostgresDatabase</name>
-                                    <inputSchema>public</inputSchema>
+                                    <inputSchema>Schema</inputSchema>
                                 </database>
                                 <target>
                                     <packageName>siggeac.jooq.generated</packageName>

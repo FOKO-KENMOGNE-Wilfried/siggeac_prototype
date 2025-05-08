@@ -1,0 +1,13 @@
+cours
+professeur
+groupe
+inscription
+offre
+professeur_bureau_abs
+professeur_bureau_pre
+competence
+disponibilite
+prealable
+affectation
+evaluation
+etudiant

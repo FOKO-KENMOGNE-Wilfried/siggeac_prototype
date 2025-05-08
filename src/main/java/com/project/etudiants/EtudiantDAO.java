@@ -8,15 +8,15 @@ import org.jooq.impl.DSL;
 
 import com.project.config.DBConnectionManager;
 
-import siggeac.jooq.generated.tables.Etudiants;
-import siggeac.jooq.generated.tables.records.EtudiantsRecord;
+import siggeac.jooq.generated.tables.Etudiant;
+import siggeac.jooq.generated.tables.records.EtudiantRecord;
 
 public class EtudiantDAO {
-    public List<EtudiantsRecord> findAll() throws Exception {
+    public List<EtudiantRecord> findAll() throws Exception {
 
         try (Connection conn = DBConnectionManager.getConnection()) {
             DSLContext ctx = DSL.using(conn);
-            return ctx.selectFrom(Etudiants.ETUDIANTS).fetch();
+            return ctx.selectFrom(Etudiant.ETUDIANT).fetch();
         }
     }
 }

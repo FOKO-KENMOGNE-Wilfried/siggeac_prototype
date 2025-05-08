@@ -6,7 +6,7 @@ import com.project.core.Permission;
 import com.project.core.Role;
 import com.project.core.SecurityManager;
 
-import siggeac.jooq.generated.tables.records.EtudiantsRecord;
+import siggeac.jooq.generated.tables.records.EtudiantRecord;
 
 public class EtudiantCLI {
 
@@ -17,14 +17,12 @@ public class EtudiantCLI {
         }
         try {
             EtudiantService service = new EtudiantService();
-            List<EtudiantsRecord> liste = service.listerEtudiants();
+            List<EtudiantRecord> liste = service.listerEtudiants();
             System.out.println("Students list: ");
-            for (EtudiantsRecord e : liste) {
+            for (EtudiantRecord e : liste) {
                 System.out.printf("[%d] %s %s (%s)\n",
-                        e.getId(),
-                        e.getPrenom(),
-                        e.getNom(),
-                        e.getMatricule());
+                        e.getMatriculee(),
+                        e.getNom());
             }
         } catch (Exception e) {
             e.printStackTrace();
