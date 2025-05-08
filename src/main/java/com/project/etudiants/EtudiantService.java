@@ -2,7 +2,7 @@ package com.project.etudiants;
 
 import java.util.List;
 
-import siggeac.jooq.generated.tables.records.EtudiantRecord;
+import siggeac.jooq.generated.default_schema.tables.records.EtudiantRecord;
 
 public class EtudiantService {
 
@@ -10,6 +10,9 @@ public class EtudiantService {
 
     public List<EtudiantRecord> listerEtudiants() throws Exception {
         return dao.findAll();
+    }
+
+    public void function() {
     }
 
 }

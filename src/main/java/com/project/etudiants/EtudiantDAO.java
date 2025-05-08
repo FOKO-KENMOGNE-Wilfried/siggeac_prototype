@@ -8,8 +8,8 @@ import org.jooq.impl.DSL;
 
 import com.project.config.DBConnectionManager;
 
-import siggeac.jooq.generated.tables.Etudiant;
-import siggeac.jooq.generated.tables.records.EtudiantRecord;
+import siggeac.jooq.generated.default_schema.tables.Etudiant;
+import siggeac.jooq.generated.default_schema.tables.records.EtudiantRecord;
 
 public class EtudiantDAO {
     public List<EtudiantRecord> findAll() throws Exception {

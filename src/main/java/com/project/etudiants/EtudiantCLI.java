@@ -6,7 +6,7 @@ import com.project.core.Permission;
 import com.project.core.Role;
 import com.project.core.SecurityManager;
 
-import siggeac.jooq.generated.tables.records.EtudiantRecord;
+import siggeac.jooq.generated.default_schema.tables.records.EtudiantRecord;
 
 public class EtudiantCLI {
 

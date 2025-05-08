@@ -66,17 +66,30 @@
                                 <driver>org.postgresql.Driver</driver>
                                 <url>jdbc:postgresql://localhost:5432/test_db</url>
                                 <user>postgres</user>
-                                <password>Secret</password>
+                                <password>Jin800##</password>
                             </jdbc>
                             <generator>
                                 <database>
                                     <name>org.jooq.meta.postgres.PostgresDatabase</name>
-                                    <inputSchema>Schema</inputSchema>
+                                    <schemata>
+                                        <schema>
+                                            <inputSchema>IMM_base</inputSchema>
+                                            <outputSchemaToDefault>true</outputSchemaToDefault>
+                                        </schema>
+                                        <schema>
+                                            <inputSchema>MDD</inputSchema>
+                                            <outputSchemaToDefault>true</outputSchemaToDefault>
+                                        </schema>
+                                    </schemata>
                                 </database>
                                 <target>
                                     <packageName>siggeac.jooq.generated</packageName>
                                     <directory>target/generated-sources/jooq</directory>
                                 </target>
+                                <generate>
+                                    <javaTimeTypes>true</javaTimeTypes>
+                                    <relations>false</relations>
+                                </generate>
                             </generator>
                         </configuration>
                     </execution>
